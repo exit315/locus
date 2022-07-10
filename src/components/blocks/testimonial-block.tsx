@@ -11,10 +11,15 @@ const BlockWrapper = styled.section`
 `;
 
 const Title = styled.h3`
-  margin: 0;
+  margin: 0 0 20px;
   font-weight: 800;
   font-size: 70px;
   line-height: 105px;
+`;
+
+const PartnerBlockWrapper = styled.h3`
+  width: 100%;
+  margin: 0 0 60px;
 `;
 
 const TestimonialBlock:React.FC = () => {
@@ -23,7 +28,9 @@ const TestimonialBlock:React.FC = () => {
     <BlockWrapper>
       <Title>Testimonial</Title>
 
-      <PartnerBlock />
+      <PartnerBlockWrapper>
+        <PartnerBlock />
+      </PartnerBlockWrapper>
       <ReviewBlock />
     </BlockWrapper>
   );
