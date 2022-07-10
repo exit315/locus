@@ -8,7 +8,7 @@ const Form = styled.form`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 50px;
+  padding: 50px 50px 35px;
   border: 1px solid #486958;
 `;
 
@@ -26,9 +26,11 @@ const InputWithBorder = styled(Input)`
   border-bottom: 1px solid #000000;
 `;
 
-const ContactForm:React.FC = () => {
-  console.log(`ContactForm`);
+const BtnWrapper = styled.div`
+  align-self: flex-end;
+`;
 
+const ContactForm:React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     address: '',
@@ -55,7 +57,9 @@ const ContactForm:React.FC = () => {
       <InputWithBorder type="text" value={formData.address} placeholder="Email address" onChange={handleTextInput('address')} />
       <Input type="text" value={formData.description} placeholder="Description" onChange={handleTextInput('description')} />
 
-      <Button title="Send now" clickHandler={submitHandler} type="angle" />
+      <BtnWrapper>
+        <Button title="Send now" clickHandler={submitHandler} type="angle" />
+      </BtnWrapper>
     </Form>
   );
 };
