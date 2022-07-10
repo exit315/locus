@@ -20,7 +20,7 @@ const Header:React.FC = () => {
 
       <Button title="Sign Up" clickHandler={() => {}} type="circle" />
     </HeaderWrapper>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

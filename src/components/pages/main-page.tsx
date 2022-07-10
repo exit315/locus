@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import ContactBlock from "../blocks/contact-block";
+import TestimonialBlock from "../blocks/testimonial-block";
 import Header from "../blocks/header";
 
 const Main = styled.main`
@@ -14,6 +15,8 @@ const MainPage:React.FC = () => {
       <Header />
 
       <Main>
+        <TestimonialBlock />
+
         <ContactBlock />
       </Main>
     </>
