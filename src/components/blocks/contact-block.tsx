@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import ContactForm from "./contact-form";
 import {Color} from "../../utils/style";
+import Title from "../elements/title";
 
 const BlockWrapper = styled.section`
   display: flex;
@@ -20,13 +21,6 @@ const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 25%;
-`;
-
-const Title = styled.h3`
-  margin: 0;
-  font-weight: 800;
-  font-size: 70px;
-  line-height: 105px;
 `;
 
 const Text = styled.p`
