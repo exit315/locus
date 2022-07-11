@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import reviewImage from "../../../assets/img/review.png";
 import icon from "../../../assets/img/icon.svg";
+import {Color} from "../../utils/style";
 
 const BlockWrapper = styled.div`
   display: flex;
@@ -17,7 +18,7 @@ const TextWrapper = styled.div`
   flex-direction: column;
   width: 100%;
   padding: 50px 105px 50px 135px;
-  background-color: #CCF0E6;
+  background-color: ${Color.paleTurquoise};
 `;
 
 const InfoList = styled.ul`
@@ -37,7 +38,7 @@ const InfoNumber = styled.p`
   font-weight: 800;
   font-size: 70px;
   line-height: 80px;
-  color: #58A9A5;
+  color: ${Color.turquoise};
 `;
 
 const InfoText = styled.p`
@@ -45,7 +46,7 @@ const InfoText = styled.p`
   font-weight: 600;
   font-size: 30px;
   line-height: 45px;
-  color: #58A9A5;
+  color: ${Color.turquoise};
 `;
 
 const ReviewWrapper = styled.div`
@@ -66,7 +67,7 @@ const ReviewText = styled.p`
   font-weight: 500;
   font-size: 25px;
   line-height: 38px;
-  color: #486958;
+  color: ${Color.green};
 `;
 
 const ReviewAuthor = styled(ReviewText)`
@@ -80,7 +81,7 @@ const Text = styled.p`
   font-weight: 500;
   font-size: 25px;
   line-height: 38px;
-  color: #486958;
+  color: ${Color.green};
 `;
 
 const Span = styled.span`
@@ -93,7 +94,7 @@ const Span = styled.span`
 
     width: 135px;
     height: 5px;
-    background-color: #58A9A5;
+    background-color: ${Color.turquoise};
   }
 
   ::after {

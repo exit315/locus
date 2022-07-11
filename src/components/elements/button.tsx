@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import {Color} from "../../utils/style";
 
 const BtnAngle = styled.button`
   display: block;
@@ -9,7 +10,7 @@ const BtnAngle = styled.button`
   font-size: 25px;
   line-height: 38px;
   color: #fff;
-  background-color: #58A9A5;
+  background-color: ${Color.turquoise};
   border-color: transparent;
   border-radius: 20px 20px 20px 0px;
 `;

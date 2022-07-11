@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import logo from "../../../assets/img/logo.svg";
+import {Color} from "../../utils/style";
 
 const LogoWrapper = styled.div`
   display: flex;
@@ -17,7 +18,7 @@ const LogoText = styled.span`
   font-weight: 800;
   font-size: 35px;
   line-height: 52px;
-  color: #58A9A5;
+  color: ${Color.turquoise};
 `;
 
 const Logo:React.FC = () => {

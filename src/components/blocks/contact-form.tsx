@@ -1,6 +1,7 @@
 import React, { memo, useState } from "react";
 import styled from 'styled-components';
 import Button from "../elements/button";
+import {Color} from "../../utils/style";
 
 const Form = styled.form`
   display: flex;
@@ -9,7 +10,7 @@ const Form = styled.form`
   justify-content: space-between;
   width: 100%;
   padding: 50px 50px 35px;
-  border: 1px solid #486958;
+  border: 1px solid ${Color.green};
 `;
 
 const Input = styled.input`
@@ -23,7 +24,7 @@ const Input = styled.input`
 `;
 
 const InputWithBorder = styled(Input)`
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid ${Color.black};
 `;
 
 const BtnWrapper = styled.div`

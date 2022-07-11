@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import ContactForm from "./contact-form";
+import {Color} from "../../utils/style";
 
 const BlockWrapper = styled.section`
   display: flex;
@@ -33,7 +34,7 @@ const Text = styled.p`
   font-weight: 500;
   font-size: 25px;
   line-height: 38px;
-  color: #486958;
+  color: ${Color.green};
 `;
 
 const Span = styled.span`
@@ -46,7 +47,7 @@ const Span = styled.span`
 
     width: 135px;
     height: 5px;
-    background-color: #58A9A5;
+    background-color: ${Color.turquoise};
   }
 
   ::after {

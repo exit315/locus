@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import {Color} from "../../utils/style";
 
 const NavList = styled.nav`
   display: flex;
@@ -10,20 +11,19 @@ const NavList = styled.nav`
 `;
 
 const NavItem = styled.li`
-
 `;
 
 const NavLink = styled.a`
   font-weight: 400;
   font-size: 25px;
-  color: #404242;
+  color: ${Color.darkGrey};
   line-height: 38px;
   text-decoration: none;
 `;
 
 const ActiveNavLink = styled(NavLink)`
 position: relative;
-  color: #58A9A5;
+  color: ${Color.turquoise};
   font-weight: bold;
 
   ::after {
@@ -33,12 +33,12 @@ position: relative;
     left: calc(50% - 24px);
     width: 48px;
     height: 6px;
-    background-color: #FEC62D;
+    background-color: ${Color.yellow};
     border-radius: 21px;
   }
 `;
 
-const Navigation:React.FC = () => {
+const NavMenu:React.FC = () => {
   const navList = [
     'Home',
     'Contact',
@@ -57,4 +57,4 @@ const Navigation:React.FC = () => {
   );
 };
 
-export default Navigation;
+export default NavMenu;

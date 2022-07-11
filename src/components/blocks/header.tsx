@@ -2,7 +2,7 @@ import React from "react"
 import styled from 'styled-components'
 import Button from "../elements/button"
 import Logo from "../elements/logo"
-import Navigation from "./navigation"
+import NavMenu from "./nav-menu"
 
 const HeaderWrapper = styled.header`
   display: flex;
@@ -16,7 +16,7 @@ const Header:React.FC = () => {
     <HeaderWrapper>
       <Logo />
 
-      <Navigation />
+      <NavMenu />
 
       <Button title="Sign Up" clickHandler={() => {}} type="circle" />
     </HeaderWrapper>
