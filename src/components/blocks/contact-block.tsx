@@ -4,7 +4,7 @@ import ContactForm from "./contact-form";
 import {Color} from "../../utils/style";
 import Title from "../elements/title";
 
-const BlockWrapper = styled.section`
+const Block = styled.section`
   display: flex;
   justify-content: space-between;
 `;
@@ -52,9 +52,9 @@ const Span = styled.span`
 const ContactBlock:React.FC = () => {
 
   return (
-    <BlockWrapper>
+    <Block>
       <TextWrapper>
-        <Title>Contact Us</Title>
+        <Title marginBottom={`10px`}>Contact Us</Title>
         <Text>Have any questions? Want help before getting started?</Text>
         <Span />
       </TextWrapper>
@@ -62,7 +62,7 @@ const ContactBlock:React.FC = () => {
       <ContactFormWrapper>
         <ContactForm />
       </ContactFormWrapper>
-    </BlockWrapper>
+    </Block>
   );
 };
 

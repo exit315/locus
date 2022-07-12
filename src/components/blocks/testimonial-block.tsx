@@ -4,11 +4,12 @@ import ReviewBlock from "../blocks/review-block";
 import PartnerBlock from "../blocks/partner-block";
 import Title from "../elements/title";
 
-const BlockWrapper = styled.section`
+const Block = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 240px;
 `;
 
 const PartnerBlockWrapper = styled.h3`
@@ -19,14 +20,14 @@ const PartnerBlockWrapper = styled.h3`
 const TestimonialBlock:React.FC = () => {
 
   return (
-    <BlockWrapper>
-      <Title>Testimonial</Title>
+    <Block>
+      <Title marginBottom={`20px`}>Testimonial</Title>
 
       <PartnerBlockWrapper>
         <PartnerBlock />
       </PartnerBlockWrapper>
       <ReviewBlock />
-    </BlockWrapper>
+    </Block>
   );
 };
 
