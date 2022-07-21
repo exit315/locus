@@ -38,6 +38,7 @@ const Span = styled.span`
   ::after {
     content: "";
     position: absolute;
+    left: 0;
 
     width: 135px;
     height: 5px;
