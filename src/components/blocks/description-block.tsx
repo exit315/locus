@@ -2,8 +2,8 @@ import React from "react";
 import styled from 'styled-components';
 import Title from "../elements/title";
 import descriptionBg from "../../../assets/img/description-bg.png";
-import introBgColor from "../../../assets/img/intro-bg-color.png";
 import {Color} from "../../utils/style";
+import MissionBlock from "./mission-block";
 
 const Block = styled.section`
   margin-bottom: 120px;
@@ -22,12 +22,14 @@ const Text = styled.p`
   line-height: 45px;
 `;
 
-const ImageWrapper = styled.div`
+const VideoWrapper = styled.div`
   display: flex;
   margin-bottom: 120px;
 `;
 
 const Image = styled.img`
+  display: block;
+  width: 70%;
 `;
 
 const TextWrapper = styled.div`
@@ -107,8 +109,8 @@ const DescriptionBlock:React.FC = () => {
         <Text>Spice up your space even simpler <br /> than you think</Text>
       </TitleWrapper>
 
-      <ImageWrapper>
-        <Image src={descriptionBg} />
+      <VideoWrapper>
+        <Image src={descriptionBg} width="1063" height="350" />
 
         <TextWrapper>
           <DescriptionText>We provide design and build for commercial building, interior and furniture to improve the better life.</DescriptionText>
@@ -121,7 +123,9 @@ const DescriptionBlock:React.FC = () => {
             </PlayBtnWrapper>
           </PlayBlock>
         </TextWrapper>
-      </ImageWrapper>
+      </VideoWrapper>
+
+      <MissionBlock />
     </Block>
   );
 };
