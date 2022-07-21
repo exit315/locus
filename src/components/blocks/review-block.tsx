@@ -76,32 +76,6 @@ const ReviewAuthor = styled(ReviewText)`
   font-style: italic;
 `;
 
-const Text = styled.p`
-  margin: 0 0 35px;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 38px;
-  color: ${Color.green};
-`;
-
-const Span = styled.span`
-  position: relative;
-
-  ::before,
-  ::after {
-    content: "";
-    position: absolute;
-
-    width: 135px;
-    height: 5px;
-    background-color: ${Color.turquoise};
-  }
-
-  ::after {
-    top: 20px;
-  }
-`;
-
 const ReviewBlock:React.FC = () => {
 
   return (
