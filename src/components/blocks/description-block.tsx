@@ -24,7 +24,7 @@ const Text = styled.p`
 
 const VideoWrapper = styled.div`
   display: flex;
-  margin-bottom: 120px;
+  margin-bottom: 150px;
 `;
 
 const Image = styled.img`
